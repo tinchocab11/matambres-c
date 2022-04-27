@@ -1,0 +1,249 @@
+/* LETRA DE PAG */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald&family=Roboto:wght@500&display=swap');
+
+
+*,:before,*:after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: #DCCBB9;
+    margin: 0px;
+    min-height: 100vh;
+}
+
+
+/* CABECERA */
+header {
+    font-family: 'Lato', sans-serif;
+    background: #99754E;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.header__imagen {
+    display: flex;
+    width: 135px;
+    margin-left: 30px;
+    border: solid 1px #DCCBB9;
+    border-radius: 50%;
+}
+
+.barranav {
+    background-color: #99754E;
+    list-style: none;
+    height: 110px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .6)
+}
+
+.barranav__lista {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.barranav__lista li {
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.barranav__lista li a {
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    text-transform: uppercase;
+    color: black;
+    border: solid 1px black;
+}
+
+.barranav li {
+    display: inline-block;
+    margin: 30px;
+    text-align: center;
+
+}
+
+.barranav li a:hover {
+    background: #DCCBB9;
+    transition: 0.5s;
+}
+
+/* MAIN */
+
+.main__imagen {
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    border-radius: 10%;
+}
+
+/* TABLA PRECIOS EN CONTACTOS */
+.contenedor{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tabla{
+    width: 33%;
+    height: 550px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 0px black;
+    padding: 60px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.tabla>h2{
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.tabla img{
+    width: 150px;
+    margin-bottom: 5px;
+}
+
+.tabla > h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 1000px){
+    .tabla{
+        width: 45%;
+        max-width: none;
+        margin-bottom: 40px;
+        flex-grow: initial;
+    }
+    .tabla h2{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .tabla{
+        width: 85%;
+        padding: 20px;
+    }
+}
+    
+
+
+/* FOOTER */
+
+.footer{
+    background: #99754E;
+    border-top: solid 1px black;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .6)
+}
+
+.footer p{
+    text-align: center; 
+    font-size: 20px;
+}
+
+.footer__list{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+
+/* BOTON FLOTANTE WPP: INICIO */
+.container-boton{
+    background-color: #38BB39;
+    border: 0px solid #38BB39;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 15px;
+    right: 10px;
+    padding: 15px;
+    transition: ease 0.3s;
+}
+.container-boton:hover{
+    background: #38BB39;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.boton{
+    background: #38BB39;
+    width: 35px;
+    transition: ease 1s;
+}
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+/* BOTON FLOTANTE WPP: FIN */
+
+
+/* FORM. CONT */
+textarea {
+    resize: none;
+}
+.form-register{
+    width: 400px;
+    background-color: #99754E;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4{
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.controls{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+    font-size: 18px;
+}
+
+.form-register .bottons{
+    width: 100%;
+    border: none;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+
+/* FAQ */
